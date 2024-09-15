@@ -4,6 +4,7 @@
     background-blend-mode: overlay;
     position: relative;
     @include bg-cover;
+    margin-top: 0;
 
     &.--bottom{
         height: 61px;
