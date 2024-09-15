@@ -1,0 +1,99 @@
+.steps {
+    margin-top: 200px;
+
+    & .project_title_h2 {
+        margin-bottom: 54px;
+        
+
+        & span, & small {
+            min-width: 300px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            color: #3057a2;
+        }
+
+        & span{
+            margin-left: 20px;
+            position: relative;
+
+            & small{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                transform: translateY(-50%);
+                left: 0;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.steps_inner {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    & li {
+        // box-shadow: 5px 4px 13px 0 rgba(0, 0, 0, 0.25);
+        padding: 20px;
+
+        &:nth-child(3) {
+            grid-row: 2 span;
+        }
+
+        &:last-of-type {
+            grid-column: 2 span;
+            display: grid;
+            grid-template-columns: 1fr 280px;
+
+            & dd {
+                max-width: none;
+            }
+
+            & .img-wrap {
+                position: relative;
+
+                & img {
+                    position: absolute;
+                    z-index: 1;
+                    left: 0;
+                    right: -63px;
+                    bottom: -10px;
+                    max-width: 376px;
+                }
+            }
+        }
+
+        & dl {
+            display: flex;
+            gap: 16px;
+
+
+            & dt {
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                background: #fff;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+                color: #313131;
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            & dd {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 120%;
+                color: #313131;
+                max-width: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.tournament {
+    margin-top: 80px;
+}
+
+.tournament_inner {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    & .img-wrap{
+        flex-shrink: 0;
+
+        & img{
+            max-width: 394px;
+        }
+    }
+}
+
+.project_title_h3 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #313131;
+
+    & span {
+        font-weight: 700;
+        color: #f54932;
+    }
+}
