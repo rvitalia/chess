@@ -1,1 +1,1 @@
-new Swiper(".swiper_participants",{slidesPerView:3,spaceBetween:57,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",type:"fraction",formatFractionCurrent:e=>e,formatFractionTotal:e=>e}});
+new Swiper(".swiper_participants",{slidesPerView:3,spaceBetween:57,loop:!0,autoplay:{delay:4e3,disableOnInteraction:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",type:"fraction",formatFractionCurrent:e=>e,formatFractionTotal:e=>e}});
