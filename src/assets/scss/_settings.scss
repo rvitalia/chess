@@ -55,14 +55,26 @@ a {
   padding: 14px 20px;
   transition: all 0.3s linear;
   border: 2px solid #1f1f1f;
+  transition: all 0.3s linear;
 
   &.--black {
     background: #1f1f1f;
     color: #fff;
+
+    &:hover{
+      color: #1f1f1f;
+      background-color: #fff;
+    }
   }
 
   &.--border {
     color: #1f1f1f;
+
+    &:hover{
+      color: #fff;
+      background-color: #1f1f1f;
+      border-color: #fff;
+    }
   }
 
 }

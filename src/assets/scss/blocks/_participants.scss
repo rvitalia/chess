@@ -109,5 +109,11 @@
         max-width: max-content;
         margin-left: auto;
         margin-right: auto;
+        transition: all 0.3s linear;
+
+        &:hover{
+            color: #fff;
+            background-color: #3057a2;
+        }
     }
 }
